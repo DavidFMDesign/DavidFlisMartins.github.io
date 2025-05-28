@@ -1,0 +1,119 @@
+body{
+  width: 90vw;
+  margin: 20px auto;
+
+}
+
+header{
+  width: 200px;
+  margin: 20px auto;
+}
+
+header img{
+  width: 100%;
+}
+
+.infogrid h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.infogrid p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.infogrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  grid-template-areas: 
+  "a a a"
+  "b c c"
+  "b d d"
+  "e d d"
+  ;
+  margin-bottom: 20px;
+}
+
+.glasses{
+  grid-area: a;
+  background-color: #d9d9d9;
+}
+
+.bluelight{
+  grid-area: b;
+  background-color: #e8c2ca;
+}
+
+.sunglasses{
+  grid-area: c;
+  background-color: aliceblue;
+}
+
+.lenses{
+  grid-area: d;
+  background-color: antiquewhite;
+}
+
+.accessories{
+  grid-area: e;
+  background-color: beige;
+}
+
+.infogrid div{
+  padding: 50px;
+}
+
+.text p{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 5vw;
+  line-height: 1.1;
+  text-align:center;
+  background-color: aquamarine;
+  padding:200px 0px;
+  margin-bottom: 20px;
+}
+
+.fotogrid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:2rem;
+  height: 200vh; /*een lege dif altijd een hoogte hebben*/
+}
+
+.img1{
+  background-image: url("../images/vrouw_1.webp");
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
+.img2{
+  background-image: url("../images/man_1.jpeg");
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.img3{
+  background-image: url("../images/vrouw_3.jpeg");
+  grid-column: 4;
+  grid-row: 2/4;
+}
+
+.img4{
+  background-image: url("../images/man_2.webp");
+  grid-column: 1;
+  grid-row: 4;
+}
+.img5{
+  background-image: url("../images/bril.webp");
+  grid-column: 2/5;
+  grid-row: 4;
+}
+
+.fotogrid div{
+  background-size: cover;
+  background-position: center;
+}
